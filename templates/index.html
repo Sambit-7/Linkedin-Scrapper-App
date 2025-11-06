@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LinkedIn Scraper</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 LinkedIn Profile Scraper</h1>
+    <p>Enter LinkedIn profile URLs (one per line):</p>
+    <form action="/scrape" method="POST">
+      <textarea name="urls" placeholder="https://www.linkedin.com/in/example1/&#10;https://www.linkedin.com/in/example2/" required></textarea>
+      <button type="submit">Start Scraping 🚀</button>
+    </form>
+  </div>
+</body>
+</html>
+
